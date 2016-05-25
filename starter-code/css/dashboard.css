@@ -124,3 +124,7 @@ body {
   color: red;
   background: none;
 }
+
+.active {
+  font-weight: bold;
+}
