@@ -40,7 +40,7 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <h4>History</h4>
           <ul class="nav nav-sidebar">
-            <li ng-repeat="oneSearch in history track by $index" ng-class="{active: $index === 0}"><a href="#" ng-click="remove($index)" class="deletex">x</a> <a href="#" ng-click="research(oneSearch)">{{oneSearch}}</a></li>
+            <li ng-repeat="oneSearch in history" ng-class="{active: searchTerm === oneSearch}"><a href="#" ng-click="remove($index)" class="deletex">x</a> <a href="#" ng-click="research(oneSearch)">{{oneSearch}}</a></li>
           </ul>
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
